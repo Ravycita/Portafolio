@@ -1,0 +1,36 @@
+/* ESTILOS GENERALES */ 
+
+.mat-card {
+    border-radius: 32px;
+    margin: 23px 23px;
+    padding: 20px;
+    border-color: black;
+}
+
+.mat-card#first-card {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.fa-brands:hover {
+    color: gray;
+}
+
+.fa-xmark {
+    color: black;
+    display: block;
+    height: 2.4rem;
+    width: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+}
+
+.fa-xmark:hover {
+    color: gray;
+}

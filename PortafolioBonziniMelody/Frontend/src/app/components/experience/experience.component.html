@@ -1,0 +1,67 @@
+<div class="card mat-card" id="second-card">
+    <div class="exp-contenedor">
+        <div class="card-titles">
+            <h3>Experiencia</h3>
+            <div class="alinear-exp">
+                <div>
+                    <p id="exp-text"> Aca va tu exp, equisde </p>
+                </div>
+                <div class="btn-edit" id="exp-pen" onclick="modificar_parrafo()">
+                    <a href="#" class="btn-rigth">
+                        <i class="fa fa-pen"></i>
+                    </a>
+                </div>
+                <div class="btn-delete" id="exp-delete" onclick="delete_parrafo()">
+                    <a href="#" class="btn-rigth">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <input id="exp-edit" type="text" oninput="modificar_parrafo2(this.value)" style="display:none">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function modificar_parrafo() {
+        document.getElementById("exp-edit").style.display = "block";
+        let texto = document.getElementById("exp-text").innerText;
+        console.log(texto);
+    };
+
+    function modificar_parrafo2(valor) {
+        document.getElementById("exp-text").innerText = valor;
+    };
+
+    let textarea = document.getElementById("exp-edit")
+    textarea.addEventListener('keyup', (e) => {
+        logMessage(`Key "${e.key}" released  [event: keyup]`);
+        if (e.key == "Enter") {
+            document.getElementById("exp-edit").style.display = "none"
+        }
+    });
+
+    function logMessage(mensaje) {
+        console.log(mensaje);
+    }
+
+    function showFile(input) {
+        let file = input.files[0];
+        alert('File name: ${file.name}');
+        alert('Last modified: $(file.lastModified}');
+
+        let reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function () {
+            console.log(reader.result);
+            document.getElementById("exp-text").innerText = reader.result;
+        };
+        reader.onerror = function () {
+            console.log(reader.error);
+        };
+    }
+</script>
