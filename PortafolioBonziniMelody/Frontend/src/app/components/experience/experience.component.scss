@@ -1,4 +1,25 @@
-.alinear-exp {
+.alinear-exp {    
+    margin-top: 40px;
     display: flex;
-
+    justify-content: space-between;
 }
+
+#exp-text {
+    font-size: 18px;
+}
+
+.alinear-btn {
+    display: flex;
+    float: right;
+}
+
+.fa-pen {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.fa-xmark {
+    font-size: 23px;
+    
+}
+

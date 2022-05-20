@@ -1,10 +1,9 @@
 /* ESTILOS GENERALES */ 
 
 .mat-card {
-    border-radius: 32px;
     margin: 23px 23px;
     padding: 20px;
-    border-color: black;
+    border-color: gray;
 }
 
 .mat-card#first-card {
@@ -12,11 +11,27 @@
     padding: 0;
 }
 
+.fa-camera-retro {
+    color: black;
+}
+
+.fa-camera-retro:hover {
+    color: gray;
+}
+
 .fa-brands {
     color: white;
 }
 
 .fa-brands:hover {
+    color: gray;
+}
+
+.fa-pen {
+  color: black;
+}
+
+.fa-pen:hover {
     color: gray;
 }
 

@@ -52,7 +52,6 @@
 
 div#profile-background {
     display: flex;
-    z-index: 1;
 }
 
 div#profile-background img {
@@ -84,6 +83,15 @@ div#profile-background img {
         top: -110px;
         z-index: 1;
     }
+}
+
+.img-btn {
+    display: flex;
+}
+
+.btn-camera { 
+    position: relative;
+    z-index: 2;
 }
 
 @media (min-width: 576px) {
@@ -126,4 +134,26 @@ div#profile-background img {
 
 #titulo-acerca {
    display: flex;
+}
+
+.alinear-btn-perfil {
+    float: right;
+    
+    
+    
+}
+
+.alinear-btn {
+    display: flex;
+    float: right;
+}
+
+.fa-pen {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.fa-xmark {
+    font-size: 23px;
+    margin-right: 20px;
 }

@@ -17,24 +17,47 @@
 <!-- CONTENT -->
 
 <div class="card mat-card" id="first-card">
-    <div id="profile-background"><img src="./assets/background.jpg">
-    </div>
+        <img src="./assets/background.jpg">
+
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <img src="./assets/perfil.jpg" class="img-fluid" id="profile-image">
-        <div class="contact" id="info">
-            <p id="name"> MELODY BONZINI </p>
-            <p id="title"> Full Stack Developer Jr </p>
+            <div class="img-btn">
+                <img src="./assets/perfil.jpg" class="img-fluid" id="profile-image">
+                <div class="btn-camera"><a href="#"><i class="fa-solid fa-camera-retro"></i></a></div>
+            </div>
+            <div class="contact" id="info">
+                <div class="alinear-btn-perfil">
+                    <div class="btn-edit" id="exp-pen" onclick="modificar_parrafo()">
+                        <a href="#" class="btn-rigth">
+                            <i class="fa fa-pen"></i>
+                        </a>
+                    </div>
+                </div>
+                <p id="name"> MELODY BONZINI </p>
+                <p id="title"> Full Stack Developer Jr </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
             <div class="acerca-de" id="alingment">
-            <span>
-                <h1 id="titulo-acerca">Acerca de mi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quaerat explicabo eligendi veritatis
-                    sed qui expedita nostrum tenetur cum dignissimos aut eaque consequatur minima adipisci. Officia
-                    alias nostrum non adipisci!</p>
-            </span>
+                <span>
+                    <div class="alinear-btn">
+                        <div class="btn-edit" id="exp-pen" onclick="modificar_parrafo()">
+                            <a href="#" class="btn-rigth">
+                                <i class="fa fa-pen"></i>
+                            </a>
+                        </div>
+                        <div class="btn-delete" id="exp-delete" onclick="delete_parrafo()">
+                            <a href="#" class="btn-rigth">
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 id="titulo-acerca">Acerca de mi</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quaerat explicabo eligendi
+                        veritatis
+                        sed qui expedita nostrum tenetur cum dignissimos aut eaque consequatur minima adipisci. Officia
+                        alias nostrum non adipisci!</p>
+                </span>
             </div>
         </div>
     </div>
